@@ -1,0 +1,99 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Access the weBuyAnyCar Website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1521000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Navigates to the weBuyAnyCar Webpage",
+            "match": {
+              "location": "com.weBuyAnyCar.stepDefinitions.CarDetailsStepDef.userNavigatesToTheWeBuyAnyCarWebpage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-19T18:43:27.692Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.weBuyAnyCar.hooks.Hooks.retrieveRegs()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4761000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.weBuyAnyCar.hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Create a new device successfully",
+        "description": "",
+        "id": "ensure-car-details-are-returned;create-a-new-device-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 853000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.weBuyAnyCar.hooks.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 68128000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters the \"Registration\" Number and validates Car details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Registration\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.weBuyAnyCar.stepDefinitions.CarDetailsStepDef.enterCarRegNumberAndSearch(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Ensure Car details are returned",
+    "description": "",
+    "id": "ensure-car-details-are-returned",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/weBuyAnyCar/features/ValidateCarSpec.feature",
+    "tags": []
+  }
+]

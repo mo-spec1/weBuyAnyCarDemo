@@ -1,0 +1,6 @@
+target/generated-test-sources
+target/maven-status
+target/Selenium-Spark
+target/surefire-reports
+target/test-classes
+target/HtmlReport
