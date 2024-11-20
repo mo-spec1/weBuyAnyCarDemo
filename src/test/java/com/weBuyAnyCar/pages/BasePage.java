@@ -109,15 +109,13 @@ public class BasePage extends Utility {
                     Assert.fail();
                 }
 
-                Assert.assertEquals("Reg mismatch for " + currentRegNumber, expectedDetails.getReg(), actualDetails.getReg());
-                Assert.assertEquals("Make mismatch for " + currentRegNumber, expectedDetails.getMake(), actualDetails.getMake());
-                Assert.assertEquals("Model mismatch for " + currentRegNumber, expectedDetails.getModel(), actualDetails.getModel());
-                Assert.assertEquals("Year mismatch for " + currentRegNumber, expectedDetails.getYear(), actualDetails.getYear());
-
-                CarDetailsHolder details = expectedCarDetailsMap.get(regNumber);
+                Assert.assertEquals("Reg match " + currentRegNumber, expectedDetails.getReg(), actualDetails.getReg());
+                Assert.assertEquals("Make match " + currentRegNumber, expectedDetails.getMake(), actualDetails.getMake());
+                Assert.assertEquals("Model match " + currentRegNumber, expectedDetails.getModel(), actualDetails.getModel());
+                Assert.assertEquals("Year match " + currentRegNumber, expectedDetails.getYear(), actualDetails.getYear());
             }
             catch (Exception e){
-                System.err.println("Error with reg number" + regNumber + ": " + e.getMessage());
+                System.err.println("Error with reg number:" + regNumber + e.getMessage());
                 e.printStackTrace();
             }
             if (elementPresent (VALUATION_BACK_BTTN)) {
